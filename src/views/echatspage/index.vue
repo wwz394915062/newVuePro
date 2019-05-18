@@ -1,6 +1,6 @@
-<<template>
-  <div class="page">
-
+<template>
+  <div class="">
+    <h2>echats使用</h2>
   </div>
 </template>
 
@@ -19,4 +19,3 @@ export default {
 
 <style scoped lang="">
 </style>
-
