@@ -3,14 +3,15 @@
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import './components/modules/index'
 import App from './App.vue'
+import store from './store'
 import i18n from './vuei18n/vuei18n'
 import 'babel-polyfill'
 
 Vue.use(ElementUI);
 
 import router from './router'
-console.log(router)
 
 Vue.config.productionTip = false
 
@@ -19,6 +20,7 @@ new Vue({
   el: '#app',
   router,
   i18n,
+  store,
   components: { App },
   template: '<App/>'
 })

@@ -1,6 +1,7 @@
 <template>
   <div class="">
-    <h2>echats使用</h2>
+    <h2>{{ $t('message.图表') }}</h2>
+    <el-button type="primary" round @click="goHomePage">{{ $t('message.首页') }}</el-button>
   </div>
 </template>
 
@@ -8,11 +9,16 @@
 export default {
   data () {
     return {
-
+      msg: '图表使用'
+    }
+  },
+  methods: {
+    goHomePage () {
+      this.$router.push('/homepage')
     }
   },
   components: {
-
+    
   }
 }
 </script>

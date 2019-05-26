@@ -1,6 +1,6 @@
 <template>
   <div class="footer-wrapper">
-    <h1>footer</h1>
+    <h1>{{ $t('message.底部') }}</h1>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   data () {
     return {
-
+      // title: 'footer'
     }
   },
   components: {
@@ -24,6 +24,6 @@ export default {
     bottom: 0;
     height: 80px;
     background: gray;
-    color: red;
+    color: black;
   }
 </style>

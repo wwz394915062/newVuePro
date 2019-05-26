@@ -10,7 +10,7 @@ const requireRoutes = require.context('./routes', false, /\.js$/)
 requireRoutes.keys().forEach(file => {
   routesArray.push(file.slice(1))
 });
-console.log(routesArray)
+// console.log(routesArray)
 
 const routesMap = []
 
@@ -18,7 +18,7 @@ for (let index = 0; index < routesArray.length; index++) {
   const routesPath = require(`./routes${routesArray[index]}`)
   routesMap.push(routesPath.default[0])
 }
-console.log(...routesMap)
+
 const router = new Router({
   mode: '',
   routes: [ 

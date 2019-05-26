@@ -3,8 +3,7 @@
     <HeaderBar/>
     <div class="content-inner">
       <div class="navbar-wrapper">
-        <!-- <navigation/> -->
-        <h1>layoutcontent</h1>
+        <navigation/>
       </div>
       <div class="content-wrapper">
         <router-view/>
@@ -40,18 +39,17 @@ export default {
       width: 100%;
       top: 80px;
       bottom: 80px;
-      padding: 80px 0;
-      background: #FABF40;
       .navbar-wrapper {
         float: left;
-        width: 20%;
+        width: 220px;
         height: 100%;
-        background: green;
+        // background: #aaa;
+        overflow-y: auto
       }
       .content-wrapper {
-        margin-left: 20%;
+        margin-left: 210px;
         height: 100%;
-        background: greenyellow;
+        background: #ccc;
       }
     }
   }

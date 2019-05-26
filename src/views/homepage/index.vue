@@ -1,6 +1,8 @@
 <template>
   <div class="home-wrapper">
-    <h1>hompage</h1>
+    <h1>{{ $t('message.首页内容') }}</h1>
+    <el-button type="primary" round @click="goEchatsPage">{{ $t('message.图页') }}</el-button>
+
     <!-- <routerView/> -->
   </div>
 </template>
@@ -9,7 +11,12 @@
 export default {
   data () {
     return {
-
+      msg: '首页内容'
+    }
+  },
+  methods: {
+    goEchatsPage () {
+      this.$router.push('/echatspage')
     }
   },
   components: {
