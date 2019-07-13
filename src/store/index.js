@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import app from './modules/app'
+import navigation from './modules/navigation'
 
 Vue.use(Vuex)
 
@@ -23,7 +24,8 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   modules: {
     // ...modulsesMap
-    app
+    app,
+    navigation
   }
 })
 

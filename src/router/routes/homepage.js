@@ -2,7 +2,7 @@
 import layout from '@/components/layout/Index'
 
 const Homepage = resolve => require(['@/views/homepage/Index'], resolve)
-console.log(layout)
+// console.log(layout)
 const routes = [
   {
     path: '/homepage',
